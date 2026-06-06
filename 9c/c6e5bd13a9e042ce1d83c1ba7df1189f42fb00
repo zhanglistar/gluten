@@ -1,0 +1,24 @@
+cpp-ch/local-engine/Parser/SparkRowToCHColumn.cpp
+  s_a2364785014770::t_c01b1305029e70 133-134,141-144
+  s_a2364785014770::t_1d04a00cb5fcd9 135-140
+cpp-ch/local-engine/Parser/SparkRowToCHColumn.h
+  s_a2364785014770::t_f1b70e432efd4c 19
+  s_a2364785014770::t_6c2733bf846c71 23,25,27,177-195,203,213,235-240,408,414-418
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "9cc6e5bd13a9e042ce1d83c1ba7df1189f42fb00",
+  "prompts": {},
+  "logical_commit_id": "9cc6e5bd13a9e042ce1d83c1ba7df1189f42fb00",
+  "sessions": {
+    "s_a2364785014770": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e9bde-4064-7a00-8988-9dd42772c154",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
