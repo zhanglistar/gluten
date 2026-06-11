@@ -1,0 +1,20 @@
+ep/build-clickhouse/src/build-clickhouse.sh
+  s_a2364785014770::t_04c79685be9513 20,26,29,32,41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "54a83f4dab4f1051aee4cdc9077fbfe2cb6908ff",
+  "prompts": {},
+  "logical_commit_id": "54a83f4dab4f1051aee4cdc9077fbfe2cb6908ff",
+  "sessions": {
+    "s_a2364785014770": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e9bde-4064-7a00-8988-9dd42772c154",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
