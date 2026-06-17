@@ -1,0 +1,54 @@
+gluten-flink/ut/src/test/java/org/apache/gluten/velox/PulsarSourceSinkFactoryTest.java
+  s_37329e2b59a52e::t_20df9585ec15c7 1-23,25,27,29,32-39,41-51,95-96
+  s_37329e2b59a52e::t_738a13cd6fc551 24,26,52-56,58-59,65-73,75-78,84-85
+  s_37329e2b59a52e::t_a9a6e64607254b 28,40
+  s_37329e2b59a52e::t_136e79bccc6981 30-31
+  s_37329e2b59a52e::t_c4212173993b53 57,60-61
+  s_37329e2b59a52e::t_ae27733d6a5d4b 62-63,79-83,87-90
+  s_37329e2b59a52e::t_e980f941e64b42 64,86,91-94
+  s_37329e2b59a52e::t_4de1760a0f33ce 74
+gluten-flink/ut/pom.xml
+  s_37329e2b59a52e::t_20df9585ec15c7 61
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/common/CommonExecSink.java
+  s_37329e2b59a52e::t_3b54974664df60 225-227
+gluten-flink/runtime/src/main/java/org/apache/gluten/velox/VeloxSourceSinkFactory.java
+  s_37329e2b59a52e::t_cdc70983afb119 25-26,38-47,72-73,75-76,80-81,92-104,108-115
+  s_37329e2b59a52e::t_1fbd90717b1450 29,64-71
+  s_37329e2b59a52e::t_9830146a40acfd 36-37,61,74,82-91,121,135
+  s_37329e2b59a52e::t_75345f107839b0 105-107
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecTableSourceScan.java
+  s_37329e2b59a52e::t_abba9ab5e96fd9 116-118
+gluten-flink/planner/src/main/java/org/apache/gluten/velox/PulsarSourceSinkFactory.java
+  s_37329e2b59a52e::t_3c3f212606990c 1-40,42-43,45,47,49-51,53-55,57-63,65-128,130-146,150-151,180-185,190-199,205-224,229-313,370-371
+  s_37329e2b59a52e::t_79dac36d681d0e 41,46,48,52,64,148-149,186-189,314-369
+  s_37329e2b59a52e::t_f399fa12d8c855 44,174-179
+  s_37329e2b59a52e::t_c9aed96c2d0c93 56
+  s_37329e2b59a52e::t_7d93b3f763096e 129,147
+  s_37329e2b59a52e::t_0ab77363c2153a 152
+  s_37329e2b59a52e::t_2192ee35b2d237 153,161,225-228
+  s_37329e2b59a52e::t_6456eb7263a770 154-160
+  s_37329e2b59a52e::t_ea23a479924f66 162
+  s_37329e2b59a52e::t_8d880825107c4a 163-173,200-204
+gluten-flink/planner/src/main/resources/META-INF/services/org.apache.gluten.velox.VeloxSourceSinkFactory
+  s_37329e2b59a52e::t_3c3f212606990c 3
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenSourceFunction.java
+  s_37329e2b59a52e::t_159fa0bcc1c4d6 112
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/config/VeloxConnectorConfig.java
+  s_37329e2b59a52e::t_3c3f212606990c 36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "13a947ee60093dc7ac3df54d61915355f5f009af",
+  "prompts": {},
+  "sessions": {
+    "s_37329e2b59a52e": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eca64-55f4-7432-ac71-2ff56d25cc85",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
