@@ -1,0 +1,35 @@
+gluten-flink/runtime/src/main/java/org/apache/gluten/util/VectorOutputBridge.java
+  s_4d19972c003c21::t_7b9cd0375047d8 43,88,99,123,129
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperator.java
+  s_4d19972c003c21::t_677bad2bc236f4 36-37,76,124-125,127,191-196
+  s_4d19972c003c21::t_f857a4025ad101 126
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/metrics/SourceTaskMetrics.java
+  s_4d19972c003c21::t_118cf351f2b54e 30-31,45,58-60,71-72,80-83,89-90,105-139,143-148
+  s_4d19972c003c21::t_4482691618fbfa 24-25,41-44,50-57,61-70,73-76,91-98,140-142
+  s_4d19972c003c21::t_f8f08a16d8b955 20
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/metrics/SourceTaskMetricsTest.java
+  s_4d19972c003c21::t_4482691618fbfa 42-63
+  s_4d19972c003c21::t_f8f08a16d8b955 1-41,64-126
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
+  s_4d19972c003c21::t_ea4f6654a62e1c 159
+  s_4d19972c003c21::t_d828433b6c2423 40-41,71,157-158,160,211-216
+gluten-flink/ut/src/test/java/org/apache/gluten/streaming/api/operators/GlutenStreamFilterTest.java
+  s_4d19972c003c21::t_b47369ab30a951 68-91
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "b2968ec499ffad75d97ef3da6fd1d0518d20d78f",
+  "prompts": {},
+  "logical_commit_id": "b2968ec499ffad75d97ef3da6fd1d0518d20d78f",
+  "sessions": {
+    "s_4d19972c003c21": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ed563-6013-72f2-b7a3-96f804028a47",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
