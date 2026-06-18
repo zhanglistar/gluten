@@ -1,0 +1,22 @@
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenSourceFunction.java
+  s_4d19972c003c21::t_832ec9700b0d5e 214,235,246-273
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/metrics/SourceTaskMetrics.java
+  s_4d19972c003c21::t_01a7a2f4e76e21 115-118,130-138
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "67a3cccbf6013af0e91c3a5b56e85bc4d869af2b",
+  "prompts": {},
+  "logical_commit_id": "67a3cccbf6013af0e91c3a5b56e85bc4d869af2b",
+  "sessions": {
+    "s_4d19972c003c21": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ed563-6013-72f2-b7a3-96f804028a47",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
