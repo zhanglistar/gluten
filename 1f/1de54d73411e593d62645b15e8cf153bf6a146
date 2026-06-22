@@ -1,0 +1,32 @@
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/ScalarFunctionsTest.java
+  s_28ef972a69dec5::t_d67bf47cd304ac 327,331-334,341
+  s_28ef972a69dec5::t_d2f12a4ccea304 317-326,328-330,335-340,342-344
+gluten-flink/ut/src/test/java/org/apache/gluten/vectorized/ArrowTimestampVectorTest.java
+  s_28ef972a69dec5::t_0f37964b37449c 26,50-58
+  s_28ef972a69dec5::t_4f6b9a10586369 36-44,49
+  s_28ef972a69dec5::t_1b7e791ccf0ec8 1-25,27-35,45-48,59-61
+gluten-flink/runtime/src/main/java/org/apache/gluten/vectorized/ArrowVectorWriter.java
+  s_28ef972a69dec5::t_bd34362d787159 168-170
+  s_28ef972a69dec5::t_d82e5646f28032 164-167,171,187-195,413,417-423,425,431,436,445-452,456-465,467
+gluten-flink/runtime/src/main/java/org/apache/gluten/util/LogicalTypeConverter.java
+  s_28ef972a69dec5::t_504f702f268a6b 70-74,118-122
+gluten-flink/runtime/src/main/java/org/apache/gluten/vectorized/ArrowVectorAccessor.java
+  s_28ef972a69dec5::t_2bb304322c26b5 33,35-40,73-80,285,287,293-317
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "1f1de54d73411e593d62645b15e8cf153bf6a146",
+  "prompts": {},
+  "logical_commit_id": "1f1de54d73411e593d62645b15e8cf153bf6a146",
+  "sessions": {
+    "s_28ef972a69dec5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee05-f168-74c0-b693-33b8e5451509",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
