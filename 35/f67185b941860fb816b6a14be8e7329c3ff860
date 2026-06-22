@@ -1,0 +1,26 @@
+.github/workflows/flink.yml
+  s_f51f0e7ba64e41::t_2386f298afd2a1 65
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecLocalWindowAggregate.java
+  s_f51f0e7ba64e41::t_f874da8b0d9c2a 223-226
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecGlobalWindowAggregate.java
+  s_f51f0e7ba64e41::t_852dcb822cac42 255-258
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecWindowAggregate.java
+  s_f51f0e7ba64e41::t_758e683ee4bbab 258-261
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "35f67185b941860fb816b6a14be8e7329c3ff860",
+  "prompts": {},
+  "logical_commit_id": "35f67185b941860fb816b6a14be8e7329c3ff860",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
