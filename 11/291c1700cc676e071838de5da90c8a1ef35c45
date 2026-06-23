@@ -1,0 +1,25 @@
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenSourceFunction.java
+  s_4d19972c003c21::t_59ffd2b5741230 35-36,48,71-72,213,215-217,222-233,253,273
+  s_4d19972c003c21::t_832ec9700b0d5e 246-247,255-256,274-275
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/metrics/SourceTaskMetrics.java
+  s_4d19972c003c21::t_f8f08a16d8b955 20
+  s_4d19972c003c21::t_4482691618fbfa 24-25,39-42,48-55,59-68,71-74,89-96,150-152
+  s_4d19972c003c21::t_118cf351f2b54e 43,56-58,69-70,78-81,87-88,103-114,119-129,141-149,153-158
+  s_4d19972c003c21::t_01a7a2f4e76e21 130-131
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "11291c1700cc676e071838de5da90c8a1ef35c45",
+  "prompts": {},
+  "sessions": {
+    "s_4d19972c003c21": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ed563-6013-72f2-b7a3-96f804028a47",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
