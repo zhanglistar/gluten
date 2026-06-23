@@ -1,0 +1,28 @@
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
+  s_f51f0e7ba64e41::t_7d9b1077331a1e 179,186-218,252-256
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/NexmarkTest.java
+  s_f51f0e7ba64e41::t_14f9ab7527a3d8 30-32,186,208-210,214-252
+  s_f51f0e7ba64e41::t_36c97d9faf9e89 46
+gluten-flink/ut/pom.xml
+  s_f51f0e7ba64e41::t_665840eaeb5d55 210-215
+  s_f51f0e7ba64e41::t_121859b04637e9 204-205,207-209
+  s_f51f0e7ba64e41::t_d0b602a7fcb03b 206
+  s_f51f0e7ba64e41::t_6fb59f3b303a56 216-221
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "38005da630ce5064436f55ff22706395e84e9845",
+  "prompts": {},
+  "logical_commit_id": "38005da630ce5064436f55ff22706395e84e9845",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
