@@ -1,0 +1,19 @@
+.github/workflows/flink.yml
+  s_f51f0e7ba64e41::t_4c330cf4b31566 73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "a14c680083adc9c3f541a1cd07d5cfe1f4e6389f",
+  "prompts": {},
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    }
+  }
+}
