@@ -1,0 +1,24 @@
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperator.java
+  s_f51f0e7ba64e41::t_79b1d268235d5e 238-255,258-262,264-267,269-270
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
+  s_f51f0e7ba64e41::t_4e216e21041b6c 263-277,280-284,286-287
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenCloseables.java
+  s_f51f0e7ba64e41::t_4e216e21041b6c 1-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "1122fe20f067e7a1cc27a94ebf6eae2382ac996c",
+  "prompts": {},
+  "logical_commit_id": "1122fe20f067e7a1cc27a94ebf6eae2382ac996c",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
