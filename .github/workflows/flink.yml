@@ -24,7 +24,7 @@ on:
 
 env:
   MAVEN_OPTS: >-
-    -Xmx2g
+    -Xmx4g
     --add-opens=java.base/java.nio=org.apache.arrow.memory.core,ALL-UNNAMED
     --add-opens=java.base/sun.nio.ch=org.apache.arrow.memory.core,ALL-UNNAMED
     --add-opens=java.base/java.lang=ALL-UNNAMED
@@ -55,10 +55,17 @@ jobs:
     container: apache/gluten:centos-8-jdk17
     steps:
       - uses: actions/checkout@v4
+      - name: Setup ccache
+        uses: actions/cache@v4
+        with:
+          path: /tmp/ccache
+          key: ccache-flink-centos8-${{ runner.arch }}-${{ github.sha }}
+          restore-keys: |
+            ccache-flink-centos8-${{ runner.arch }}
       - name: Prepare
         run: |
           source /opt/rh/gcc-toolset-11/enable
-          sudo dnf install -y patchelf
+          sudo dnf install -y patchelf ccache
           sudo yum install https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/Packages/tzdata-2026a-1.el9.noarch.rpm -y
           sudo .github/workflows/util/install-flink-deps.sh
           # Remove system fmt v11 from the CI image to avoid header conflicts with
@@ -69,18 +76,23 @@ jobs:
           export VELOX_DEPENDENCY_SOURCE=BUNDLED
           export fmt_SOURCE=BUNDLED
           export folly_SOURCE=BUNDLED
+          # Use ccache to speed up native C++ recompilation across runs.
+          export CCACHE_DIR=/tmp/ccache
+          ccache -M 5G
+          ccache -sz
           git clone -b gluten-0530 https://github.com/bigo-sg/velox4j.git
           cd velox4j && git reset --hard 115edf79d265a61c30d45dfcc6ce932ad92378ca
           git apply $GITHUB_WORKSPACE/gluten-flink/patches/fix-velox4j.patch
-          $GITHUB_WORKSPACE/build/mvn clean install -DskipTests -Dgpg.skip -Dspotless.skip=true
+          $GITHUB_WORKSPACE/build/mvn clean install -T 1C -DskipTests -Dgpg.skip -Dspotless.skip=true
+          ccache -s
           cd ..
           git clone https://github.com/nexmark/nexmark.git
           cd nexmark
-          $GITHUB_WORKSPACE/build/mvn clean install -DskipTests
+          $GITHUB_WORKSPACE/build/mvn clean install -T 1C -DskipTests
       - name: Build Gluten Flink
         run: |
           cd $GITHUB_WORKSPACE/gluten-flink
-          $GITHUB_WORKSPACE/build/mvn clean package -Dmaven.test.skip=true
+          $GITHUB_WORKSPACE/build/mvn clean package -T 1C -Dmaven.test.skip=true
       - name: Run Unit Tests
         run: |
           cd $GITHUB_WORKSPACE/gluten-flink
