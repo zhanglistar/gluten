@@ -1,0 +1,24 @@
+gluten-flink/ut/src/test/java/org/apache/gluten/velox/PulsarSourceSinkFactoryTest.java
+  s_8bddc0610f59b0::t_25a5ccc4bc4a07 56,84,90
+gluten-flink/planner/src/main/java/org/apache/gluten/velox/PulsarSourceSinkFactory.java
+  s_8bddc0610f59b0::t_a9a1aea1e0593b 188-194,204-206,208-213
+  s_8bddc0610f59b0::t_f5cb82812a8a42 197-198
+  s_8bddc0610f59b0::t_461994d7247ccc 183-187,195-196,199-203,207
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.13",
+  "base_commit_sha": "5f4560cda12e220bc1a5e38bc8d198633ddfb5c7",
+  "prompts": {},
+  "logical_commit_id": "5f4560cda12e220bc1a5e38bc8d198633ddfb5c7",
+  "sessions": {
+    "s_8bddc0610f59b0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0196-c5e1-72b3-b312-209a9235343a",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
