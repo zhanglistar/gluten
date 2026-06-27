@@ -1,0 +1,23 @@
+.github/workflows/flink.yml
+  s_8bddc0610f59b0::t_e7797852da48d7 40
+  s_8bddc0610f59b0::t_199d904c3c9a47 54
+gluten-flink/ut/pom.xml
+  s_8bddc0610f59b0::t_eda93165c1af41 43
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "2570a1c41b602312ec5ed9ae889d78c2aa6011d2",
+  "prompts": {},
+  "logical_commit_id": "2570a1c41b602312ec5ed9ae889d78c2aa6011d2",
+  "sessions": {
+    "s_8bddc0610f59b0": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f0196-c5e1-72b3-b312-209a9235343a",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
