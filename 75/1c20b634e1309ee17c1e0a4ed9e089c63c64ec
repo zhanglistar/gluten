@@ -1,5 +1,6 @@
 gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
   s_f51f0e7ba64e41::t_7d9b1077331a1e 221,228-260
+  s_f51f0e7ba64e41::t_eca374963a89f6 295-297
 gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/NexmarkTest.java
   s_f51f0e7ba64e41::t_2d43acd99b34a5 78,90,270,281,347
   s_f51f0e7ba64e41::t_14f9ab7527a3d8 30-32,228,250-252,258-269,271-280,282-296
