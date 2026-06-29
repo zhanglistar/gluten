@@ -3,6 +3,7 @@ gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/Glu
   s_f51f0e7ba64e41::t_ed0549e6fdc27a 215-216
   s_f51f0e7ba64e41::t_6a41e0a925c89d 294-296,301
   s_f51f0e7ba64e41::t_79b1d268235d5e 262-266,269-271,279-282,288-293,296-297,298-300,302-303
+  s_f51f0e7ba64e41::t_3c6f406b219b4b 278
 gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
   s_f51f0e7ba64e41::t_d7322cc3f93cb6 299-301,306
   s_f51f0e7ba64e41::t_4e216e21041b6c 287-288,291,294-297,303-304,306-308,311-315,317-318
