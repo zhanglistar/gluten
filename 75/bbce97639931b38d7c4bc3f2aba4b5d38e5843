@@ -1,0 +1,24 @@
+gluten-flink/ut/pom.xml
+  s_f51f0e7ba64e41::t_4a8f1e70cd0655 198-201
+  s_f51f0e7ba64e41::t_753ab0d947cab5 202-203,205-206,208-209
+  s_f51f0e7ba64e41::t_6fb59f3b303a56 204
+  s_f51f0e7ba64e41::t_04e8341d5188df 207
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/NexmarkTest.java
+  s_f51f0e7ba64e41::t_2d43acd99b34a5 74,86,300
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "75bbce97639931b38d7c4bc3f2aba4b5d38e5843",
+  "prompts": {},
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
