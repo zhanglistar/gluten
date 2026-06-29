@@ -5,6 +5,7 @@ gluten-flink/ut/pom.xml
   s_f51f0e7ba64e41::t_04e8341d5188df 207
 gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/NexmarkTest.java
   s_f51f0e7ba64e41::t_2d43acd99b34a5 74,86,300
+  s_f51f0e7ba64e41::t_45535f101426ee 297-299
 ---
 {
   "schema_version": "authorship/3.0.0",
