@@ -1,0 +1,20 @@
+.gitlab-ci.yml
+  s_bcb1eaa64c1cba::t_724b5bfe2acbc3 1-98
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "5c56e36795c4fcbf9078af041f21ef52f083e120",
+  "prompts": {},
+  "logical_commit_id": "5c56e36795c4fcbf9078af041f21ef52f083e120",
+  "sessions": {
+    "s_bcb1eaa64c1cba": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f123f-3a99-70b3-9684-ac4921c4c92f",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
