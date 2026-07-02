@@ -1,0 +1,28 @@
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperator.java
+  s_f51f0e7ba64e41::t_e4a01fd1493837 283-287
+.github/workflows/flink.yml
+  s_f51f0e7ba64e41::t_3fd0871e9d7f3c 91
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
+  s_f51f0e7ba64e41::t_6cdde79be1f664 293-298
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperatorCloseTest.java
+  s_f51f0e7ba64e41::t_34391e66bfeab2 53
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperatorCloseTest.java
+  s_f51f0e7ba64e41::t_aca6177765fcbd 60
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "9a66d81332dc07ada10c52067525d585cc14b9e7",
+  "prompts": {},
+  "logical_commit_id": "ff3e026279d2c7624d49ef88c427fb205dc0b349",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
