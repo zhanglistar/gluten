@@ -1,0 +1,20 @@
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/NexmarkTest.java
+  s_f51f0e7ba64e41::t_68243927d5be0e 266
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "7c237f6b924d5675c2a5e29acb43632f28689204",
+  "prompts": {},
+  "logical_commit_id": "7c237f6b924d5675c2a5e29acb43632f28689204",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
