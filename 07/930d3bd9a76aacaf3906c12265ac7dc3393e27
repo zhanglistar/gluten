@@ -1,0 +1,22 @@
+gluten-flink/ut/pom.xml
+  s_f51f0e7ba64e41::t_0ab27c475f2151 189,195,201
+gluten-flink/pom.xml
+  s_f51f0e7ba64e41::t_5d6004188b9bdc 35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "07930d3bd9a76aacaf3906c12265ac7dc3393e27",
+  "prompts": {},
+  "logical_commit_id": "07930d3bd9a76aacaf3906c12265ac7dc3393e27",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
