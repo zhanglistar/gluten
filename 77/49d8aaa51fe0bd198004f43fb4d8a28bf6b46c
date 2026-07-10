@@ -1,0 +1,20 @@
+gluten-flink/ut/src/test/resources/nexmark/q10_orc.sql
+  s_f51f0e7ba64e41::t_4f0991cf3be35e 13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "7749d8aaa51fe0bd198004f43fb4d8a28bf6b46c",
+  "prompts": {},
+  "logical_commit_id": "84ef067b57ba5acd960753aeed662025e201e01d",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}

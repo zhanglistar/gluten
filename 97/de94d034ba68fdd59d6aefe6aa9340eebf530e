@@ -1,0 +1,46 @@
+gluten-flink/ut/src/test/resources/nexmark/q10_orc.sql
+  s_f51f0e7ba64e41::t_c9d0386092a915 1-23
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/stream/custom/NexmarkTest.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 43,75,210,226-248,270-274,278-309,311,359-365
+  s_f51f0e7ba64e41::t_1b595a11e622f4 310
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecWindowJoin.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 248
+.github/workflows/flink.yml
+  s_f51f0e7ba64e41::t_c9d0386092a915 90-91
+gluten-flink/pom.xml
+  s_f51f0e7ba64e41::t_c9d0386092a915 34-35
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperatorCloseTest.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 19-23,25-26,28,30,32-35,37-138
+gluten-flink/ut/pom.xml
+  s_f51f0e7ba64e41::t_c9d0386092a915 189,195,201,282-299
+  s_f51f0e7ba64e41::t_79b4353c5ded13 300-301
+gluten-flink/runtime/src/main/java/org/apache/gluten/client/OffloadedJobGraphGenerator.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 244,282
+gluten-flink/ut/src/test/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperatorCloseTest.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 1-190
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecJoin.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 326-334
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 43,54-57,225,228-269,273,295-307
+  s_f51f0e7ba64e41::t_37525cb72d83b0 270-272,308-309
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperator.java
+  s_f51f0e7ba64e41::t_c9d0386092a915 39-40,54-58,82-83,207,210-251,255,275-290,292-295,304-305,309-310,374,381,383,417,424
+  s_f51f0e7ba64e41::t_91592d5b37471a 252-254
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "97de94d034ba68fdd59d6aefe6aa9340eebf530e",
+  "prompts": {},
+  "logical_commit_id": "b418981767513cbe7b6cb4a90bc274c7cd0931b3",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
