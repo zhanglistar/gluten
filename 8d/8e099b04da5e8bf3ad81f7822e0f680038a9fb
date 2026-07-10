@@ -1,0 +1,41 @@
+gluten-flink/patches/fix-velox4j.patch
+  s_f51f0e7ba64e41::t_7e4f4e64977165 31,33-34,38,40-44,46
+  s_f51f0e7ba64e41::t_d68729b36df0c6 37
+  s_f51f0e7ba64e41::t_462360b346bf63 1-13,32,35-36,39,45,47-58
+gluten-flink/runtime/src/main/java/org/apache/gluten/streaming/runtime/partitioner/GlutenKeyGroupStreamPartitioner.java
+  s_f51f0e7ba64e41::t_2941eabd7e8c24 45
+  s_f51f0e7ba64e41::t_b9bcf30fbbfd25 29
+  s_f51f0e7ba64e41::t_267e0581833a3b 124-125
+  s_f51f0e7ba64e41::t_c995c32c638b46 51-57,60,70,72-80,82,126,131
+gluten-flink/runtime/src/main/java/org/apache/gluten/vectorized/FlinkRowToVLVectorConvertor.java
+  s_f51f0e7ba64e41::t_b940f6495d0eb1 24,29,72,88-100
+  s_f51f0e7ba64e41::t_65b81887abe059 101-102
+gluten-flink/runtime/src/main/java/org/apache/gluten/client/OffloadedJobGraphGenerator.java
+  s_f51f0e7ba64e41::t_6e9f148d6a899b 252-253
+  s_f51f0e7ba64e41::t_720700b1760e53 292-295
+  s_f51f0e7ba64e41::t_a127d7608d67ec 488-490,500
+  s_f51f0e7ba64e41::t_74a85c51b88114 503-509,511,513
+  s_f51f0e7ba64e41::t_22064f1ff41e18 518
+  s_f51f0e7ba64e41::t_a5a24ea36e2895 537
+  s_f51f0e7ba64e41::t_b8df369880de84 576
+  s_f51f0e7ba64e41::t_b2fc0c0a7acc0b 510,512
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecExchange.java
+  s_f51f0e7ba64e41::t_63cb551fc27012 183-184
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "8d8e099b04da5e8bf3ad81f7822e0f680038a9fb",
+  "prompts": {},
+  "logical_commit_id": "8d8e099b04da5e8bf3ad81f7822e0f680038a9fb",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
