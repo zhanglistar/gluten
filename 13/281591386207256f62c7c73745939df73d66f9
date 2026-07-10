@@ -1,0 +1,39 @@
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecWindowJoin.java
+  s_f51f0e7ba64e41::t_19ebc38b70cd70 249
+  s_f51f0e7ba64e41::t_e5ae7f860614c0 20
+  s_f51f0e7ba64e41::t_b2b65bf4270593 252
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenTwoInputOperator.java
+  s_f51f0e7ba64e41::t_d210242affb0a9 232
+  s_f51f0e7ba64e41::t_91104e0ba2f47c 85-90
+  s_f51f0e7ba64e41::t_7cdc653d15579b 269-303,312-315,318-320,325-328,331-335,337-340,342-343
+  s_f51f0e7ba64e41::t_352e9e01692540 55
+  s_f51f0e7ba64e41::t_796092965f3a93 336,341
+  s_f51f0e7ba64e41::t_3a636f2d2f2032 19,44
+  s_f51f0e7ba64e41::t_2ff797e829353f 136-141
+gluten-flink/runtime/src/main/java/org/apache/gluten/table/runtime/operators/GlutenOneInputOperator.java
+  s_f51f0e7ba64e41::t_869e45f169211b 293
+  s_f51f0e7ba64e41::t_c83c899d0fba6e 77
+  s_f51f0e7ba64e41::t_b4fd7f64e921b4 284-287,291-292,294-298
+  s_f51f0e7ba64e41::t_177df825ed4d6e 47,299-300
+gluten-flink/planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecJoin.java
+  s_f51f0e7ba64e41::t_b2b65bf4270593 335
+  s_f51f0e7ba64e41::t_19ebc38b70cd70 332
+  s_f51f0e7ba64e41::t_e5ae7f860614c0 22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "13281591386207256f62c7c73745939df73d66f9",
+  "prompts": {},
+  "logical_commit_id": "13281591386207256f62c7c73745939df73d66f9",
+  "sessions": {
+    "s_f51f0e7ba64e41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eee40-752b-78e1-b045-f0a646157ab3",
+        "model": "gpt-5.5"
+      },
+      "human_author": "zhangzhibiao <zhangzhibiao@bigo.sg>"
+    }
+  }
+}
