@@ -27,6 +27,12 @@ import org.apache.flink.table.api.bridge.java.StreamTableEnvironment;
 
 import com.salesforce.kafka.test.junit5.SharedKafkaTestResource;
 import com.salesforce.kafka.test.listeners.PlainListener;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hive.ql.exec.vector.VectorizedRowBatch;
+import org.apache.orc.OrcFile;
+import org.apache.orc.Reader;
+import org.apache.orc.RecordReader;
+import org.apache.orc.TypeDescription;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
@@ -42,6 +48,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -206,6 +213,7 @@ public class NexmarkTest {
       String sql = String.format("drop table if exists %s", tableName);
       tEnv.executeSql(sql);
     }
+    tEnv.executeSql("drop table if exists nexmark_q10_orc");
     for (String view : VIEWS) {
       String sql = String.format("drop view if exists %s", view);
       tEnv.executeSql(sql);
@@ -221,6 +229,9 @@ public class NexmarkTest {
   private void executeQuery(StreamTableEnvironment tEnv, String queryFileName, boolean kafkaSource)
       throws ExecutionException, InterruptedException, TimeoutException {
     String queryContent = readSqlFromFile(NEXMARK_RESOURCE_DIR + "/" + queryFileName);
+    if ("q10_orc.sql".equals(queryFileName)) {
+      cleanQ10OrcOutput();
+    }
 
     String[] sqlStatements = queryContent.split(";");
     assertThat(sqlStatements.length).isGreaterThanOrEqualTo(2);
@@ -242,9 +253,79 @@ public class NexmarkTest {
         assertThat(checkJobRunningStatus(insertResult, 30000) == true);
       } else {
         waitForJobCompletion(insertResult, 30000);
+        if ("q10_orc.sql".equals(queryFileName)) {
+          verifyQ10OrcOutput();
+        }
       }
     }
     assertTrue(sqlStatements[sqlStatements.length - 1].trim().isEmpty());
+  }
+
+  private void cleanQ10OrcOutput() {
+    Path outputDir = Paths.get("/tmp/data/output/bid_orc");
+    if (!Files.exists(outputDir)) {
+      return;
+    }
+    try (java.util.stream.Stream<Path> files = Files.walk(outputDir)) {
+      files
+          .sorted(Comparator.reverseOrder())
+          .forEach(
+              path -> {
+                try {
+                  Files.deleteIfExists(path);
+                } catch (IOException e) {
+                  throw new RuntimeException("Failed to delete " + path, e);
+                }
+              });
+    } catch (IOException e) {
+      throw new RuntimeException("Failed to clean Q10 ORC output directory", e);
+    }
+  }
+
+  private void verifyQ10OrcOutput() {
+    Path outputDir = Paths.get("/tmp/data/output/bid_orc");
+    assertTrue("Q10 ORC output directory should exist", Files.exists(outputDir));
+
+    try (java.util.stream.Stream<Path> files = Files.walk(outputDir)) {
+      List<Path> regularFiles =
+          files.filter(Files::isRegularFile).sorted().collect(Collectors.toList());
+      assertThat(regularFiles).allMatch(path -> !path.toString().contains(".inprogress"));
+
+      List<Path> partFiles =
+          regularFiles.stream()
+              .filter(path -> path.getFileName().toString().startsWith("part-"))
+              .collect(Collectors.toList());
+      assertThat(partFiles).isNotEmpty();
+
+      long rowCount = 0L;
+      for (Path partFile : partFiles) {
+        rowCount += readAndVerifyQ10OrcFile(partFile);
+      }
+      assertThat(rowCount).isGreaterThan(0L);
+    } catch (IOException e) {
+      throw new RuntimeException("Failed to inspect Q10 ORC output", e);
+    }
+  }
+
+  private long readAndVerifyQ10OrcFile(Path partFile) throws IOException {
+    Reader reader =
+        OrcFile.createReader(
+            new org.apache.hadoop.fs.Path(partFile.toUri()),
+            OrcFile.readerOptions(new Configuration()));
+    TypeDescription schema = reader.getSchema();
+    assertThat(schema.getCategory()).isEqualTo(TypeDescription.Category.STRUCT);
+    assertThat(schema.getFieldNames())
+        .containsExactly("auction", "bidder", "price", "dateTime", "extra");
+
+    long rowCount = 0L;
+    try (RecordReader rows = reader.rows()) {
+      VectorizedRowBatch batch = schema.createRowBatch();
+      while (rows.nextBatch(batch)) {
+        rowCount += batch.size;
+      }
+    }
+    assertThat(rowCount).isEqualTo(reader.getNumberOfRows());
+    return rowCount;
   }
 
   private void waitForJobCompletion(TableResult result, long timeoutMs)
